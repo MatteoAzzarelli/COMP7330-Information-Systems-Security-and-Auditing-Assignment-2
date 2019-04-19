@@ -1,0 +1,162 @@
+\documentclass{article}
+
+
+\usepackage{arxiv}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{graphicx}       % define the path of figures
+\graphicspath{ {./img/} }
+\usepackage{setspace}       % set the space between lines
+\doublespacing
+
+% \usepackage{sectsty,textcase}
+% \allsectionsfont{\MakeTextUppercase}
+
+\title{RansomWare\\\large{[Malicious Software]}\\ \normalsize{COMP7330 - Information Systems Security and Auditing\\Assignment 2\\Group 11}}
+
+
+\author{
+  Matteo Azzarelli\\
+  Department of Computer Science\\
+  Hong Kong Baptist University\\
+  \texttt{18432468@life.hkbu.edu.hk} \\
+  \And
+  Nurzhan Izdauov\\
+  Department of Computer Science\\
+  Hong Kong Baptist University\\
+  \texttt{18446388@life.hkbu.edu.hk} \\
+%   %% examples of more authors
+%   \And
+%  Elias D.~Striatum \\
+%   Department of Electrical Engineering\\
+%   Mount-Sheikh University\\
+%   Santa Narimana, Levand \\
+%   \texttt{stariate@ee.mount-sheikh.edu} \\
+  %% \AND
+  %% Coauthor \\
+  %% Affiliation \\
+  %% Address \\
+  %% \texttt{email} \\
+  %% \And
+  %% Coauthor \\
+  %% Affiliation \\
+  %% Address \\
+  %% \texttt{email} \\
+  %% \And
+  %% Coauthor \\
+  %% Affiliation \\
+  %% Address \\
+  %% \texttt{email} \\
+}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+    The Cybersecurity is paramount for each organization if they want to use Information Technology in their business. And it is known that the most frequent and the most harmful type of attacks to corporate networks is the use of various malicious software. Ransomware is considered one of the most sophisticated and the most widespread malware. Referring to all the facts stated above, we decided to conduct research on ransomware, its types and typical symptoms. In this paper, you will find a terrific real-world case and an explanation of the mechanism and characteristics of this malware. In addition to all this, very useful countermeasures with the arguments will be provided.
+\end{abstract}
+
+
+% keywords can be removed
+\keywords{Ransomware \and Security \and Prevention \and Attack \and Cybersecurity \and Malware}
+
+
+\section{Introduction}
+    Mostly, we all hear about the latest technologies like blockchain, artificial intelligence and etc. But, obviously, the only topic that will be explored and studied as long as the computers will exist is the Cybersecurity. The possibility of a cyber attack is never negligible and is always extremely high. To make it clear, according to some statistics, there are 24 thousand of malicious software blocked daily and this is only for mobile platforms.\cite{cit1} Taking into consideration all the facts mentioned above, the importance of Cybersecurity is evident.
+    
+	People are always victims of their own actions and security issue is not an exception. For instance, most of the Internet users prefer to download free software rather than paying for the official version of it without thinking about the consequences. And the highest risk is that this software is highly likely to be malicious.
+	
+	One of the most frequent and most harmful malicious software is ransomware. Ransomware, obviously, comes from a combination of the words “ransom”, literally meaning “money”, and “software”. Thus, the first definition for this type of attack that comes up in mind is that “Ransomware attack is an attack carried out with the use of malicious software when the user is forced to pay some ransom to eliminate the consequences of the harm”.
+	
+	There are two main types of ransomware as screen lockers and encrypting ransomware. Each of the types will be described in details in the next section, additionally, mentioning the possible damages of them.
+
+
+    
+\subsection{Types of an Attack}
+   The first and most frequent type is screen locker. Screen locker, as the name implies, locks the entire operating system virtually making the user unable to use the computer or access the data until the ransom is paid. In most of the cases, a splash screen will block the access and the instruction for paying the ransom will appear on it. There may be a technical solution which is freely available and it will in all probability be announced on media or on forums. However, if you are not technical, you will likely have to speak to a specialist who will be able to help you rebuild your system without any data loss, if possible.\cite{cit2}
+   
+	The next type of attack is encrypting ransomware. Encrypting ransomware does not block the access to the system for the user, but it locks some important files on your computer. And the only way to decrypt is to pay the ransom. Even though this is one of the hardest forms to recover, it can be easily solved by periodically making a backup of your data.
+	
+	Since the ransomware remains one of the most popular attacks, new ransomware families are discovered every year. Some of the examples of these discoveries are types as scareware, doxware and RaaS. And the fact that these families are detected does not mean that they are prevented, so users should take precautions to help avoid becoming a victim.\cite{cit3}
+
+    
+\subsection{Typical Symptoms}
+    In this section, we will not discuss the most obvious symptoms as a splash screen blocking the screen or some instructions for payment sent. On the contrary, we will describe the symptoms that can help us to prevent an attack.\cite{cit4}
+    
+	Firstly, if you have some files that do not open, but they were used to, it is highly likely that you are a victim of a ransomware attack. Because these files are probably encrypted by this malware. Therefore to prevent subsequent loss of the data, immediately check your system for a virus and delete it using the special software and backup all the important data on your computer.
+	
+	Secondly, if you notice some odd or missing file extensions on your computer, it is possible that your computer is infected with a ransomware virus. Delete these files from your system and repeat the steps above to check your system.
+	
+	There are a lot of other minor symptoms as slowing of the performance of the computer, annoying pop-ups and etc.
+
+\section{Possible Damages}
+    The damages that can be done by the ransomware are classified into three:
+    \begin{enumerate}
+        \item \textbf{Financial Loss}\newline This is the obvious one because only in the year of 2018, 69 per cent of companies were hit with a ransomware attack and by the end of the year, it cost to the world more than 8 billion in damages.\cite{cit5} The main purpose of ransomware is to earn money by forcing users to pay a ransom. And it is highly recommended by specialists not to pay the ransom whatever it takes since there is no guarantee that the data will be recovered.
+        
+        \item \textbf{Loss of Data}\newline If you are not willing to pay the ransom and you have no backup of your data, the loss of data is unavoidable. The encrypted files are not accessible and there is no other way but deleting it from your storage. So if you have any important data stored on your computer prevent the attack by making a backup of it on cloud services or other data storages.
+        
+        \item \textbf{Complete malfunctioning of a system}\newline Sometimes ransomware encrypts the system files or locks the entire system. This consequently leads to a malfunctioning of the system. In this case, the only solution is to reset and rebuild the whole operating system, which will eventually lead to loss of the data too. Because of the reasons mentioned this type of damage is considered as the toughest one.
+        
+    	And this is not all, the latest ransomware attacks and their uncertain attribution continue to add complexity to an already wicked problem.\cite{cit6}
+    \end{enumerate}
+    
+\section{Real-world Case}
+    It is evident that there are many instances of a ransomware attack, so we will discuss an attack to the National Health Service (NHS) of the United Kingdom with the WannaCry ransomware which is considered as “the worst ransomware attack ever”. \cite{cit7}
+
+	In April 2017, one of the significant weaknesses of the Microsoft Windows operating system was revealed by the anonymous Shadow Brokers group of hackers. This weakness was a flaw in the implementation of the Server Message Block protocol, which allowed hackers to launch programs automatically on other computers on the same network. It was the key point to the success of WannaCry because once entering the system it could be easily spread all over the corporate network.
+
+	So, in short, one of the NHS computers were infected with the WannaCry ransomware in May 2017, which then spread to other computers of this company. And eventually, it led to a shut down of the computers in more than 80 NHS organisations in England, resulting in almost 20 thousands of cancelled appointments and 600 general practice surgeries. Five hospitals were unable to handle any more emergency cases because of the issues with diverting the ambulances.
+
+	Finally, the kill switch of this ransomware was found by Marcus Hutchins, who discovered that affected computers tried to access a particular web address after infection. Curiously, the address was not registered to anyone, so he bought the domain to stop the spreading of malware.
+
+
+    
+\section{Mechanisms and Characteristics of Ransomware attack}
+    Spam is the most common way for distributing ransomware, in fact this email contains or malicious attachment or some time redirect to some download page. After that one user is infected this virus use a sort of social engineering to spread, in fact, it can use the contacts of that user and send them email with some attachments asking to open it.\cite{cit9}
+
+    Another very common way to spread this malware is by exploit kit, in other word a piece of code or a string of commands that takes advantage of a vulnerability in a program to force it to behave unexpectedly. \cite{cit10}
+    
+    Nowadays exists a lot of ransomware, and every of them is characterised by a different delivery method and encryption algorithm, but all of them have some common behaviour.
+    
+    The most common and obvious characteristic of this attack is the screen that appear after your system was affected by this virus that ask to pay, always in bitcoin.
+    As the majority part of virus, also Ransomware is able to continue the attack also after a reboot, so they have some mechanism like change the registry file or use some function of the OS to do that.
+    
+    Some of this malware can also disable the system function of recovery, so the user is not able to roll back the OS.
+    
+    Another very interesting functionality of ransomware is that before start the attack they look for some environmental variable, like system language or whether they are running on a virtual machine. The interesting point is that some of them are designed to reach specific target, or to avoid someone else, for instance the Cerber ransomware is design to avoid to start the attack on Russian language Systems. In addition they avoid to start an attack on virtual machine to avoid that specialist can analyse and study their behaviour. \cite{cit8}
+    
+    Other characteristics are like they will perform mass file operation, like encryption and rename the files, always adding a characteristic extension, for example WanaCRY add the extension “.WNCRY”. \cite{cit11}
+
+    
+\section{Countermeasures}
+    In general, prevention is better than cure, so first of all we are going to suggest some prevention method and tips to avoid this malware.
+
+    The most efficient way to avoid this kind of virus, in particular in companies,  is to educate the stuff to detect and avoid the principal sources of this malware, like email, but obviously this is not enough because the human been is subject to commit error. 
+    
+    The second way to prevent this kind of malware is to keep update your systems, like OS antimalware and antivirus. In addition, avoid to download and install unknown sources, because always this include malicious source inside them.
+    
+    Because the most common way to spread this kind of malware is by email, have a good provider with an integrated antivirus and antispam is very important.
+    
+    One of the most efficient way to cure a ransomware is have a backup offline, this means that we can reload a previous state of our machine in case this will affect by this malware. There are several way to make organised and scheduled backups, and different support where to memorise these data, for example we could use NAS or Tape to store our data. \cite{inproceedings}
+
+\section{Conclusion}
+    In this report we introduce the kinds of Ransomware, then we show a real-world example. Than we discuss about the possible damages of this attack, showing how this malware can cause serious problems to company. After that we show how Ransomware spread and what are their typical behaviours. Finally we introduce some countermeasures to avoid or cure this malware.
+    
+    \begin{itemize}
+        \item Nurzhan Izdauov introduced the topic, exposed the real-world case and talked about the possible damages of an attack.
+        \item Matteo Azzarelli talked about mechanisms and characteristics of ransomware attack and countermeasures and finally wrote the conclusion.
+    \end{itemize}
+    
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}
